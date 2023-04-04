@@ -1,0 +1,16 @@
+.board-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    max-width: 309px;
+}
+
+.tile {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
