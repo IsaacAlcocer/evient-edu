@@ -44,8 +44,8 @@ function createBoard() {
   const board = document.createElement("div");
   board.className = "board-container";
 
-  for (let i = 0; i < COLUMNS; i++) {
-    for (let j = 0; j < ROWS; j++) {
+  for (let i = 0; i < ROWS; i++) {
+    for (let j = 0; j < COLUMNS; j++) {
       const tile = document.createElement("div");
       tile.id = `btn-${i}-${j}`;
       tile.className = "tile";
