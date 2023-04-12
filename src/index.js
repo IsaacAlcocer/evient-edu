@@ -20,20 +20,15 @@ function createBoard() {
 
   for (let i = 0; i < COLUMNS; i++) {
     for (let j = 0; j < ROWS; j++) {
-      // Crear el elemento tipo "div" que se va manipular
       const tile = document.createElement("div");
-      // Agregar atributos al elemento
       tile.id = `btn-${i}-${j}`;
       tile.className = "tile";
       tile.innerHTML = `${i}${j}`;
       tile.onclick = () => onTileClick(i, j);
-      // Insertar el tile al tablero
       board.appendChild(tile)
     }
   }
-  // Insertar tablero al body de la página
   document.body.appendChild(board);
 }
 
-// Crear tablero
 createBoard();
