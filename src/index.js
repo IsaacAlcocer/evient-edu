@@ -5,8 +5,9 @@ let currentSymbol = "X"
 
 function onTileClick(col, row) {
   let tile = document.getElementById(`btn-${col}-${row}`)
-  tile.innerHTML = currentSymbol;
+  tile.innerText = currentSymbol;
   changeSymbol();
+  winnerAlert();
 }
 
 function changeSymbol() {
@@ -20,20 +21,24 @@ function createBoard() {
 
   for (let i = 0; i < COLUMNS; i++) {
     for (let j = 0; j < ROWS; j++) {
-      // Crear el elemento tipo "div" que se va manipular
       const tile = document.createElement("div");
-      // Agregar atributos al elemento
       tile.id = `btn-${i}-${j}`;
       tile.className = "tile";
-      tile.innerHTML = `${i}${j}`;
+      tile.innerText = `${i}${j}`;
       tile.onclick = () => onTileClick(i, j);
-      // Insertar el tile al tablero
       board.appendChild(tile)
     }
   }
-  // Insertar tablero al body de la página
   document.body.appendChild(board);
 }
 
-// Crear tablero
+function winnerAlert() {
+  for (let i = 0; i < COLUMNS; i++) {
+    for (let j = 0; j < ROWS; j++) {
+      let tile = document.getElementById(`btn-${i}-${j}`)
+      console.log(i,j,tile.innerText)
+    }
+  }
+}
+
 createBoard();
