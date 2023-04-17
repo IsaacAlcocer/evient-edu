@@ -16,3 +16,8 @@ Corre este comando en tu terminal dentro del raíz del proyecto.
 
 ```yarn run build```
 
+# Cosas para notar
+- La lógica se distribuye en funciones.
+- Cada función tiene una sola responsabilidad.
+- Los nombres de las funciones describen cual es su funcionalidad.
+- Se utilizan for-loops para iterar por cada fila, columna y diagonal para revisar si sus celdas contienen el sismo simbolo (X o O).
