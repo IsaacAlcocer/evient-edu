@@ -1,15 +1,5 @@
-# Instalar Paquets
+# Instalar Paquetes
 ```yarn```
-# Ejercicio 1
-
-Dentro del archivo problema1.js dentro de la función problem1Solution crea un proceso que te permite calcular la suma de una lista de numeros.
-
-La tamaño de la lista y los valores dentro de la lista son alatorias.
-
-La función recibe un parametro que se llama numList esto es la lista que va contener varios numeros.
-
-En la linea que dice return allí se tiene que regresar el valor final.
-
 
 # Para ver la Página
 
