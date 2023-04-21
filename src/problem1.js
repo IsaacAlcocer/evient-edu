@@ -14,5 +14,9 @@
 
 
 export function problem1Solution(numList) {
-    return 0;
+    let suma = 0;
+    for (let i = 0; i < numList.length; i++) {
+      suma += numList[i];
+    }
+    return suma;
 }

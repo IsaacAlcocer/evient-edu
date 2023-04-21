@@ -21,5 +21,10 @@
 
 
 export function problem2Solution(num1, num2) {
-    return "?";
+    if (num1 < num2) {
+      return "el primero es menor";
+    } else if (num1 > num2) {
+      return "el primero es mayor";
+    }
+    return "son iguales";
 }
