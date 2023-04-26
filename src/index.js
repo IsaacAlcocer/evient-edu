@@ -1,7 +1,8 @@
 import {problem1Solution} from './problem1';
 import {problem2Solution} from "./problem2";
 import {problem3Solution} from './problem3';
-import {problem4Solution} from './problem4'
+import {problem4Solution} from './problem4';
+import {problem5Solution} from './problem5';
 
 function breakLine() {
   const hr = document.createElement("hr");
@@ -74,6 +75,13 @@ function problem4() {
   breakLine();
 }
 
+function problem5() {
+  title("Ejercicio 5: Matrix 1");
+  const matrix = problem5Solution();
+  createGrid(matrix);
+  breakLine();
+}
+
 function createMatrix(){
   const size = getRandomArbitrary(3, 6);
   let matrix = [];
@@ -90,6 +98,7 @@ function createMatrix(){
 }
 
 function createGrid(matrix) {
+  if (matrix == null) return;
   const matrixSize = matrix.length;
   const grid = document.createElement("div");
   const autos = Array.from({length: matrixSize}, () => 'auto').join(" ");
@@ -115,6 +124,7 @@ function render(){
   problem2();
   problem3();
   problem4();
+  problem5();
 }
 
 render();
