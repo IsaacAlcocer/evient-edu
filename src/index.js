@@ -69,7 +69,7 @@ function problem4() {
   title("Ejercicio 4: Encuentre cuantos hay de Red y cuantos hay de Blue.");
   const matrix = createMatrix();
   createGrid(matrix);
-  const answer = problem4Solution();
+  const answer = problem4Solution(matrix);
   paragraph(answer);
   breakLine();
 }
