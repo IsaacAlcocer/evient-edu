@@ -8,6 +8,8 @@ import {problem7Solution} from './problem7';
 import {problem8Solution} from './problem8';
 import {problem9Solution} from './problem9';
 import {problem10Solution} from './problem10';
+import {problem11Solution} from './problem11';
+import {problem12Solution} from './problem12';
 
 function breakLine() {
   const hr = document.createElement("hr");
@@ -122,6 +124,20 @@ function problem10() {
   breakLine();
 }
 
+function problem11() {
+  title("Ejercicio 11: Matrix 7 - Diagonal descendiente con unos");
+  const matrix = problem11Solution();
+  createGrid(matrix);
+  breakLine();
+}
+
+function problem12() {
+  title("Ejercicio 12: Matrix 8 - Diagonal ascendiente con unos");
+  const matrix = problem12Solution();
+  createGrid(matrix);
+  breakLine();
+}
+
 function createMatrix(){
   const size = getRandomArbitrary(3, 6);
   let matrix = [];
@@ -170,5 +186,7 @@ function render(){
   problem8();
   problem9();
   problem10();
+  problem11();
+  problem12();
 }
 render();
