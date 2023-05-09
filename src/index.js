@@ -3,6 +3,11 @@ import {problem2Solution} from "./problem2";
 import {problem3Solution} from './problem3';
 import {problem4Solution} from './problem4';
 import {problem5Solution} from './problem5';
+import {problem6Solution} from './problem6';
+import {problem7Solution} from './problem7';
+import {problem8Solution} from './problem8';
+import {problem9Solution} from './problem9';
+import {problem10Solution} from './problem10';
 
 function breakLine() {
   const hr = document.createElement("hr");
@@ -76,8 +81,43 @@ function problem4() {
 }
 
 function problem5() {
-  title("Ejercicio 5: Matrix 1");
+  title("Ejercicio 5: Matrix 1 - Primera fila con unos");
   const matrix = problem5Solution();
+  createGrid(matrix);
+  breakLine();
+}
+
+function problem6() {
+  title("Ejercicio 6: Matrix 2 - Primer fila con unos");
+  const matrix = problem6Solution();
+  createGrid(matrix);
+  breakLine();
+}
+
+function problem7() {
+  title("Ejercicio 6: Matrix 3 - Ultima fila con unos");
+  const matrix = problem7Solution();
+  createGrid(matrix);
+  breakLine();
+}
+
+function problem8() {
+  title("Ejercicio 8: Matrix 4 - Primer columna con unos");
+  const matrix = problem8Solution();
+  createGrid(matrix);
+  breakLine();
+}
+
+function problem9() {
+  title("Ejercicio 9: Matrix 5 - Segunda columna con unos");
+  const matrix = problem9Solution();
+  createGrid(matrix);
+  breakLine();
+}
+
+function problem10() {
+  title("Ejercicio 10: Matrix 6 - Ultima columna con unos");
+  const matrix = problem10Solution();
   createGrid(matrix);
   breakLine();
 }
@@ -125,6 +165,10 @@ function render(){
   problem3();
   problem4();
   problem5();
+  problem6();
+  problem7();
+  problem8();
+  problem9();
+  problem10();
 }
-
 render();
