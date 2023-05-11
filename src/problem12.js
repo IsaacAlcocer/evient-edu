@@ -21,21 +21,19 @@
 export function problem12Solution() {
   const fila = 3, columna = 3;
   const matrix = [];
+
   for (let i = 0; i < fila; i++) {
     const matrixPunto = [];
     for (let j = 0; j < columna; j++) {
-      if (i-- === j++) {
-        matrixPunto.push("1");
-      } else {
-          matrixPunto.push("0");
-        }
+      matrixPunto.push("0");
       }
       matrix.push(matrixPunto);
-    
-  }
+    }
+
+    for (let i = 0, j = matrix.length - 1; i < matrix.length; i++, j--) {
+      matrix[i][j] = "1";
+    }
 return matrix;
 }
-  
-  
             
             
