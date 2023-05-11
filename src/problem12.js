@@ -19,7 +19,23 @@
 
 
 export function problem12Solution() {
-  return;
+  const fila = 3, columna = 3;
+  const matrix = [];
+  for (let i = 0; i < fila; i++) {
+    const matrixPunto = [];
+    for (let j = 0; j < columna; j++) {
+      if (i-- === j++) {
+        matrixPunto.push("1");
+      } else {
+          matrixPunto.push("0");
+        }
+      }
+      matrix.push(matrixPunto);
+    
+  }
+return matrix;
 }
+  
+  
             
             
