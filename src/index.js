@@ -1,6 +1,10 @@
 import {problem1Solution} from './problem1';
+import {problem1BSolution} from './problem1b';
+import {problem1CSolution} from './problem1c';
 import {problem2Solution} from "./problem2";
 import {problem3Solution} from './problem3';
+import {problem3BSolution} from './problem3b';
+import {problem3CSolution} from './problem3C';
 import {problem4Solution} from './problem4';
 import {problem5Solution} from './problem5';
 import {problem6Solution} from './problem6';
@@ -52,6 +56,26 @@ function problem1() {
   breakLine();
 }
 
+function problem1B() {
+  title("Ejercicio 1b: Suma de todos los números dentro de la lista; MAP ");
+  const numList = getRandomNumberList();
+  const numListText = `[${numList.join(", ")}] = ?`;
+  paragraph(numListText);
+  const answer = problem1BSolution(numList);
+  paragraph(answer);
+  breakLine();
+}
+
+function problem1C() {
+  title("Ejercicio 1c: Suma de todos los números dentro de la lista; REDUCE ");
+  const numList = getRandomNumberList();
+  const numListText = `[${numList.join(", ")}] = ?`;
+  paragraph(numListText);
+  const answer = problem1CSolution(numList);
+  paragraph(answer);
+  breakLine();
+}
+
 
 function problem2() {
   title("Ejercicio 2: El primero número es mayor, menor o igual al segundo número.");
@@ -67,6 +91,26 @@ function problem3() {
   title("Ejercicio 3: Encuentra el número más grande");
   const numList = getRandomNumberList();
   const answer = problem3Solution(numList);
+  const numListText = `[${numList.join(", ")}] = ?`;
+  paragraph(numListText);
+  paragraph(answer);
+  breakLine();
+}
+
+function problem3B() {
+  title("Ejercicio 3b: Encuentra el número más grande; MAP");
+  const numList = getRandomNumberList();
+  const answer = problem3BSolution(numList);
+  const numListText = `[${numList.join(", ")}] = ?`;
+  paragraph(numListText);
+  paragraph(answer);
+  breakLine();
+}
+
+function problem3C() {
+  title("Ejercicio 3c: Encuentra el número más grande; REDUCE");
+  const numList = getRandomNumberList();
+  const answer = problem3CSolution(numList);
   const numListText = `[${numList.join(", ")}] = ?`;
   paragraph(numListText);
   paragraph(answer);
@@ -97,7 +141,7 @@ function problem6() {
 }
 
 function problem7() {
-  title("Ejercicio 6: Matrix 3 - Ultima fila con unos");
+  title("Ejercicio 7: Matrix 3 - Ultima fila con unos");
   const matrix = problem7Solution();
   createGrid(matrix);
   breakLine();
@@ -177,8 +221,12 @@ function createGrid(matrix) {
 
 function render(){
   problem1();
+  problem1B();
+  problem1C();
   problem2();
   problem3();
+  problem3B();
+  problem3C();
   problem4();
   problem5();
   problem6();
