@@ -19,20 +19,7 @@
 
 
 export function problem6Solution() {
-  const fila = 3, columna = 3;
-  let matrix = [];
-  for (let i = 0; i < fila; i++) {
-    let matrixFila = [];
-    for (let j = 0; j < columna; j++) {
-			if (i === 1) {
-				matrixFila.push("1");
-			}	else {
-					matrixFila.push("0");
-				}
-			}
-      matrix.push(matrixFila);    
-  }        
-return matrix;
+  return [];
 }
   
   
