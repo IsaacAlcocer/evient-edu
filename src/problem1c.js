@@ -14,5 +14,8 @@
 
 
 export function problem1CSolution(numList) {
-  return -1;
+  const suma = numList.reduce((total, numero) => {
+    return total + numero;
+  }, 0);
+  return suma;
 }

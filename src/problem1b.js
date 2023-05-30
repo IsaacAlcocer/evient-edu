@@ -14,5 +14,8 @@
 
 
 export function problem1BSolution(numList) {
-  return -1;
+  const sumaNumList = numList.map(function(suma) {
+    return suma;
+  });
+  return sumaNumList;
 }
