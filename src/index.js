@@ -220,6 +220,7 @@ function createGrid(matrix) {
 }
 
 function render(){
+  paragraph("Hello World");
   problem1();
   problem1B();
   problem1C();
