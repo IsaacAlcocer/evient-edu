@@ -49,7 +49,10 @@ function winnerAlert() {
 function getData() {
   fetch('http://localhost:8000/matches/1/')
     .then(response => response.json())
-    .then(data => createBoard(data.data.cells))
+    .then(data => {
+      console.info({data})
+      createBoard(data.data.cells)
+    })
 }
 
 getData();
