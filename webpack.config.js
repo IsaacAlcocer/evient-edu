@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     main: './src/index.js',
     createPlayer: './src/createPlayer.js',
@@ -17,6 +18,13 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 3000,
   },
   plugins: [
     new HtmlWebpackPlugin({
