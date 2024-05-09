@@ -15,5 +15,18 @@
 
 
 export function problem4Solution(matrix) {
-  return `Red: -1, Blue: -1;`
+    let redCount = 0;
+    let blueCount = 0;
+
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            if (matrix[i][j] === 'Red') {
+                redCount++;
+            } else if (matrix[i][j] === 'Blue') {
+                blueCount++;
+            }
+        }
+    }
+
+    return `Red: ${redCount}, Blue: ${blueCount}`;
 }

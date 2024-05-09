@@ -12,8 +12,13 @@
  *
  */
 
-
 export function problem3BSolution(numList) {
-    return -1;
+    let max = 0;
+    numList.map(item => {
+        if(item > max) {
+            max = item;
+        }
+    })
+    return max;
 }
 

@@ -14,5 +14,5 @@
 
 
 export function problem1CSolution(numList) {
-  return -1;
+  return numList.reduce((acc, curr) => acc + curr, 0);
 }

@@ -19,7 +19,20 @@
 
 
 export function problem12Solution() {
-  return [];
+  let matrix = [];
+  let row = 6;
+  let col = 6;
+  for(let i = 0; i < row; i++) {
+    matrix[i] = [];
+    for (let j = 0; j < col; j++) {
+      if (i + j === row - 1) {
+        matrix[i][j] = 1;
+      } else {
+        matrix[i][j] = 0;
+      }
+    }
+    }
+  return matrix;
 }
             
             

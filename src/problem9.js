@@ -19,7 +19,23 @@
 
 
 export function problem9Solution() {
-  return [];
+  let matrix = [];
+  let row = 3;
+  let col = 3;
+  for(let i = 0; i < row; i++) {
+    matrix[i] = [];
+    for(let j = 0; j < col; j++) {
+      matrix[i][j] = 0;
+    }
+  }
+  for(let k = 0; k < col; k++) {
+    if (matrix[k][1] === 0) {
+      matrix[k][1] = 1;
+    }else {
+      return false;
+    }
+  }
+  return matrix;
 }
       
       

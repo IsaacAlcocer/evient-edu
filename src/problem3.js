@@ -14,6 +14,16 @@
 
 
 export function problem3Solution(numList) {
-    return -1;
+    if (numList.length === 0) {
+        return undefined;
+    }
+
+    let max = numList[0];
+    for(let i = 1; i < numList.length; i++) {
+        if (numList[i] > max) {
+            max = numList[i];
+        }
+    }
+    return max
 }
 

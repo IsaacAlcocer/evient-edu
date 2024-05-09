@@ -14,5 +14,9 @@
 
 
 export function problem1BSolution(numList) {
-  return -1;
+  let sum = 0;
+  numList.map(item => {
+    sum += item;
+  });
+  return sum;
 }

@@ -12,8 +12,14 @@
  *
  */
 
+// se tiene que mejorar la eficiencia 
 
 export function problem3CSolution(numList) {
-    return -1;
+    const higherNumber = numList.reduce((accumulator, element) => {
+        return Math.max(accumulator, element);
+      });
+    
+      // Devolvemos el número más grande encontrado
+      return higherNumber;
 }
 

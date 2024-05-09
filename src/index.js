@@ -134,7 +134,7 @@ function problem5() {
 }
 
 function problem6() {
-  title("Ejercicio 6: Matrix 2 - Primer fila con unos");
+  title("Ejercicio 6: Matrix 2 - Segunda fila con unos");
   const matrix = problem6Solution();
   createGrid(matrix);
   breakLine();

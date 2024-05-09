@@ -19,5 +19,19 @@
 
 
 export function problem11Solution() {
-  return [];
+  let matrix = [];
+  let row = 3;
+  let col = 3;
+  for(let i = 0; i < row; i++) {
+    matrix[i] = []
+    for(let j = 0; j < col; j++) {
+      if (i === j) {
+        matrix[i][j] = 1;
+      }else {
+        matrix[i][j] = 0;
+      }
+    }
+  }
+  console.info(matrix);
+  return matrix;
 }

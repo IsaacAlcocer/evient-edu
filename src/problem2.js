@@ -21,5 +21,13 @@
 
 
 export function problem2Solution(num1, num2) {
-  return "";
+  if (num1 > num2) {
+    return `${num1} es mayor que ${num2}`;
+  }else if (num1 < num2) {
+    return `${num1} es menor que ${num2}`;
+  }else if (num1 === num2) {
+    return `${num1} es igual a ${num2}`;
+  }else {
+    return 'invalid numbers';
+  }
 }
